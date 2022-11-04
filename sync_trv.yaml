@@ -57,7 +57,6 @@ action:
     target:
       entity_id: !input trv_destination
     data:
-      data:
-        temperature: !input target_temp
-        hvac_mode: !input trv_mode
+      temperature: !input target_temp
+      hvac_mode: !input trv_mode
         
