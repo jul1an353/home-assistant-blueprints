@@ -55,9 +55,9 @@ action:
       milliseconds: 0
   - service: climate.set_temperature
     target:
-      entity_id: !input trv_destination:
+      entity_id: !input trv_destination
     data:
       data:
-        temperature: !input target_temp:
+        temperature: !input target_temp
         hvac_mode: !input trv_mode
         
