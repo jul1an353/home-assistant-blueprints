@@ -23,7 +23,7 @@ variables:
   target_temp: '{{ state_attr(trv_source, "temperature") }}'
   target_temp_state: '{{ states(trv_source) }}'
   
-  trv_mode: '{{ states(trv_source) }}'
+  trv_mode: '{{ state_attr(trv_source, "hvac_action") }}'
   
   
 trigger:
@@ -40,8 +40,7 @@ condition:
  
   - condition: template
     value_template: '{{ target_temp_state != "unavailable" and target_temp_state != "unknown" }}'
-  - condition: template
-    value_template: '{{ trv_mode != "unavailable" and trv_mode != "unknown" }}'
+ 
  
 action:
   - delay:
