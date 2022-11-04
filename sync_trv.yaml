@@ -33,12 +33,7 @@ trigger:
       minutes: 0
       seconds: 0
 
-  - platform: state
-    entity_id: !input target_temp
-    for:
-      hours: 0
-      minutes: 0
-      seconds: 0
+
 
 condition:
  
