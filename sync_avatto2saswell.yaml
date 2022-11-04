@@ -1,5 +1,5 @@
 blueprint:
-  name: TRV Sync
+  name: TRV Sync Avatto2Saswell
   description: Sync TRV  
   domain: automation
   input:
