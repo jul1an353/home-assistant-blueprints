@@ -18,6 +18,7 @@ mode: restart
 
 variables:
   
+  trv_source: !input  trv_source
 
   target_temp: '{{ state_attr(trv_source, "temperature") }}'
   target_temp_state: '{{ states(trv_source, "temperature") }}'
