@@ -57,6 +57,6 @@ action:
     target:
       entity_id: !input trv_destination
     data:
-      temperature: !input target_temp
-      hvac_mode: !input trv_mode
+      temperature: '{{  target_temp }}' 
+      hvac_mode: '{{   trv_mode }}'  
         
